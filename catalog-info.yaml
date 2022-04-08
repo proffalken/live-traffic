@@ -1,0 +1,28 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: live-traffic
+  description: Attempting to control a model railway based on events in the real world
+  annotations:
+    backstage.io/techdocs-ref: dir:docs/
+    github.com/project-slug: 'proffalken/live-traffic'
+    grafana/tag-selector: "live-traffic"
+    sentry.io/project-slug: "live-traffic"
+    prometheus.io/alert: LiveTrafficHighErrorRate
+spec:
+  type: service
+  owner: matt@doics.co
+  lifecycle: production
+  providesApis:
+    - live-traffic
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: live-traffic
+  description: Provides a simple "stop/go" API based on data from the Network Rail API's
+spec:
+  type: internal
+  lifecycle: production
+  owner: matt@doics.co
+  definition: "The live-traffic API"
