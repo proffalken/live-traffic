@@ -8,3 +8,7 @@ Source: https://github.com/proffalken/live-traffic
 # Files: src/*
 # Copyright: $YEAR $NAME <$CONTACT>
 # License: ...
+
+Files: *
+Copyright: 2022 Matthew Macdonald-Wallace <matt@doics.co>
+License: MIT-Modern-Variant
