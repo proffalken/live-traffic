@@ -1,0 +1,14 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: live-traffic
+Upstream-Contact: Proffalken <matt@doics.co>
+Source: https://github.com/proffalken/live-traffic
+
+# Sample paragraph, commented out:
+#
+# Files: src/*
+# Copyright: $YEAR $NAME <$CONTACT>
+# License: ...
+
+Files: *
+Copyright: 2022 Matthew Macdonald-Wallace <matt@doics.co>
+License: MIT-Modern-Variant

@@ -9,4 +9,5 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - uses: ricardochaves/python-lint@test
+    - name: wemake-python-styleguide
+      uses: wemake-services/wemake-python-styleguide@0.16.1
