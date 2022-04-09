@@ -6,7 +6,8 @@ Base = declarative_base()
 
 class Tiploc(Base):
     __tablename__ = "tiploc"
-    tiploc_code = Column(String(10), primary_key=True)
+    internal_tiploc_id = Column(Integer(), primary_key=True, autoincrement=True, nullable=False)
+    tiploc_code = Column(String(10))
     nalco = Column(String(10))
     stanox = Column(String(10))
     crs_code = Column(String(10))
